@@ -5,11 +5,10 @@ import org.junit.jupiter.api.Test;
 
 public class LeapYearCalculatorTest {
 
-    public void test2024IsLeapYear()
-    {
-        LeapYearCalculatorTest learYear = new LeapYearCalculatorTest(); // create object
-        boolean result = LeapYear.isLeapYear(2024);// will need to create this method
+    @Test
+    public void test2024IsLeapYear() {
+        int testYear = 2024;
+        boolean result = LeapYearCalculator.isLeapYear(testYear);
         Assertions.assertTrue(result);
     }
-
 }
